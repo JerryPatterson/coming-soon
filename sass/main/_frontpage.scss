@@ -1,0 +1,22 @@
+.landing {
+	height:100vh;
+	width:100vw;
+	position:relative;
+  background-color: $grey;
+  display: table;
+
+  .landing-content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  img {
+    height: 30vh;
+  }
+
+  p {
+    width: 600px;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+}
