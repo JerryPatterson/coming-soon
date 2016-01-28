@@ -1,31 +1,15 @@
-<?php get_header('page') ?>
+<?php get_header() ?>
 
-<!--index.php-->
-<p>index.php</p>
-	
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="twelve columns text-center">
-					 <h1 class=><?php the_title(); ?></h1>
-				</div>
-			</div>
-		</div>
-  </header>
-	<section>
-	 <div class="container">
+
+<div class="landing-content">
+	<div class="container">
 		<div class="row">
-		  <div class="eight offset-by-two columns">
-	      <?php if ( have_posts() ) : ?><?php while ( have_posts() ) : the_post(); ?>
-	      <article>
-				  <h1><?php the_title(); ?></h1>
-					<?php the_content( 'Continue...' ); ?>
-	      </article>
-	  			<?php endwhile; endif; ?>
-				</div>
-			</div>
-		</div>
-	</section>
-<?php get_footer() ?>
+ 			 <div class="twelve columns text-center">
+ 			  <img src="http://www.rohithbhat.com/comingsoon.png">
+        <p>Coming Soon's new website is currently under construction. Please contact us at 555-555-5555 with any questions you may have.</p>
+ 			</div>
+  	</div>
+	</div>
+</div>
 
-<?php get_header('page') ?>
+<?php get_footer() ?>

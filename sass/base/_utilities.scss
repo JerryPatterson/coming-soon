@@ -1,0 +1,55 @@
+// utilities-------------------
+
+/* This section has classes based on small appearance changes */
+
+img {
+  position: relative;
+	max-width: 100%;
+	height: auto;
+}
+blockquote {
+	font-size: 3.6rem;
+	font-family: $blockquote-font;
+	font-style: italic;
+}
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-top: 1px solid $hr-color; }
+
+.lead-in {
+  font-size: 1.8rem;
+}
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.u-pull-right {
+  float: right;
+}
+.u-pull-left {
+  float: left;
+}
+.accent {
+  color: $accent;
+}
+

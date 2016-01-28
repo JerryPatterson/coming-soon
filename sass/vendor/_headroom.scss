@@ -1,13 +1,10 @@
 // Styles for use with Headroom.js plugin
-
+.customize-support.fixed {
+  top: 32px;
+}
 #header {
   display: block;
   width: 100%;
- /* height: 80px;
-  background: #4e5f81;
-  -webkit-box-shadow: 1px 2px 4px rgba(0,0,0,0.4);
-  -moz-box-shadow: 1px 2px 4px rgba(0,0,0,0.4);
-  box-shadow: 1px 2px 4px rgba(0,0,0,0.4);*/
 }
 .fixed{
   position: fixed;
