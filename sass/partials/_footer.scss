@@ -1,0 +1,30 @@
+//footer styles
+
+
+.landing-footer {
+ position: absolute;
+ width: 100%;
+ bottom:0;
+ vertical-align:bottom;
+
+}
+
+@media (min-width: 1000px) {
+
+	.landing-footer {
+	  width: 100%;
+	  height: 5rem;
+	  bottom: 0;
+	  left: 0;
+	}
+}
+footer {
+	margin-top:4rem;
+	padding-bottom: .5rem;
+
+	& a {
+	color: $red !important;
+	text-decoration: none;
+	}
+	
+}
