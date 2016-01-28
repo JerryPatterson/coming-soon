@@ -1182,8 +1182,8 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
-.landing-form {
-  padding-top: 5rem; }
+#ninja_forms_form_1_all_fields_wrap {
+  padding-top: 2rem; }
 
 .field-wrap:not(:last-child) {
   display: inline-block; }
@@ -1328,23 +1328,25 @@ a:hover {
 .landing {
   height: 100vh;
   width: 100vw;
-  position: relative;
   background-color: #ddd;
-  display: table; }
+  display: table;
+  position: relative; }
   .landing .landing-content {
     display: table-cell;
     vertical-align: middle; }
   .landing img {
-    height: 30vh; }
+    height: 40vh;
+    width: auto; }
   .landing p {
-    width: 600px;
+    width: 500px;
     max-width: 90vw;
     margin: 0 auto; }
 
 footer {
   position: absolute;
   width: 100%;
-  bottom: 0; }
+  bottom: 0;
+  left: 0; }
 
 .footer {
   height: 5rem;
