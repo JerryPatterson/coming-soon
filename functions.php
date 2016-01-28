@@ -1,14 +1,14 @@
-<?php
+  <?php
 
 add_theme_support( 'menus' );
 
 add_theme_support( 'post-thumbnails' );
 
-set_post_thumbnail_size( 800, 300, true );
+set_post_thumbnail_size( 700, 482, true );
 
 
 function pwd_excerpt_length( $length) {
-    return 35; 
+    return 35;
 }
 
 add_filter( 'excerpt_length', 'pwd_excerpt_length', 999 );
@@ -33,7 +33,7 @@ function pwd_create_widget( $name, $id, $description ) {
       'before_widget' => '<div class="widget">',
       'after_widget'  => '</div>',
       'before_title'  => '<h4 class="widget-title">',
-      'after_title'   => '</h4>' 
+      'after_title'   => '</h4>'
   ));
 }
 
