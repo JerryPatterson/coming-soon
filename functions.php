@@ -4,8 +4,6 @@ add_theme_support( 'menus' );
 
 add_theme_support( 'post-thumbnails' );
 
-set_post_thumbnail_size( 700, 482, true );
-
 
 function pwd_excerpt_length( $length) {
     return 35;
