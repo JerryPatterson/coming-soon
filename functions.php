@@ -52,7 +52,7 @@ add_action( 'wp_enqueue_scripts' , 'pwd_theme_styles');
 
 function pwd_theme_js() {
 
-  wp_enqueue_script('main_js' , get_template_directory_uri() . '/js/theme.js' , array('headroom_js') ,'', true );
+  wp_enqueue_script('main_js' , get_template_directory_uri() . '/js/theme.min.js' , array('headroom_js') ,'', true );
 
 }
 add_action( 'wp_enqueue_scripts' , 'pwd_theme_js');
