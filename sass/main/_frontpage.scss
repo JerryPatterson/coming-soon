@@ -1,6 +1,6 @@
 .landing {
 	height:100vh;
-	width:100vw;
+	width:100%;
   background-color: $grey;
   display: table;
   position: relative;
@@ -8,16 +8,5 @@
   .landing-content {
     display: table-cell;
     vertical-align: middle;
-  }
-
-  img {
-    height: 40vh;
-    width: auto;
-  }
-
-  p {
-    width: 500px;
-    max-width: 90vw;
-    margin: 0 auto;
   }
 }
