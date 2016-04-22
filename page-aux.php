@@ -1,4 +1,12 @@
-<?php get_header() ?>
+<?php 
+/*
+
+Template Name: Aux
+
+*/
+?>
+
+<?php get_header('commingsoon') ?>
 
 
 <div class="landing-content">
@@ -18,4 +26,4 @@
 	</div>
 </div>
 
-<?php get_footer() ?>
+<?php get_footer('commingsoon') ?>

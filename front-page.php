@@ -1,4 +1,4 @@
-<?php get_header() ?>
+<?php get_header('comingsoon') ?>
 
 
 <div class="landing-content">
@@ -11,11 +11,11 @@
  			  			the_post_thumbnail();
  			  		}
 			  		?>
-      		<?php the_content( 'read more...' ); ?>
+      		<?php the_content(); ?>
         <?php endwhile; endif; ?>
  			</div>
   	</div>
 	</div>
 </div>
 
-<?php get_footer() ?>
+<?php get_footer('comingsoon') ?>
