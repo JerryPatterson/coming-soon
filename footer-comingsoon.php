@@ -1,5 +1,5 @@
 
-        <footer class="landing-footer">
+        <footer class="footer-coming-soon">
           <div class="container text-center">
             <div class="row">
               <div class="twelve columns">
