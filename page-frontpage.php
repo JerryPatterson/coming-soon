@@ -1,7 +1,7 @@
 <?php 
 /*
 
-Template Name: Aux
+Template Name: Front-Page
 
 */
 ?>
