@@ -11,7 +11,7 @@
  			  			the_post_thumbnail();
  			  		}
 			  		?>
-      		<?php the_content( 'read more...' ); ?>
+      		<?php the_content(); ?>
         <?php endwhile; endif; ?>
  			</div>
   	</div>
