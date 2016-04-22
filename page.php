@@ -1,4 +1,4 @@
-<?php get_header('commingsoon') ?>
+<?php get_header() ?>
 
 
 <div class="landing-content">
@@ -18,4 +18,4 @@
 	</div>
 </div>
 
-<?php get_footer('commingsoon') ?>
+<?php get_footer() ?>
