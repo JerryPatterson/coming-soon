@@ -1,12 +1,12 @@
 <?php 
 /*
 
-Template Name: Front-Page
+Template Name: Coming Soon
 
 */
 ?>
 
-<?php get_header('commingsoon') ?>
+<?php get_header('comingsoon') ?>
 
 
 <div class="landing-content">
@@ -26,4 +26,4 @@ Template Name: Front-Page
 	</div>
 </div>
 
-<?php get_footer('commingsoon') ?>
+<?php get_footer('comingsoon') ?>
