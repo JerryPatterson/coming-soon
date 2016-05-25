@@ -60,12 +60,4 @@ function pwd_theme_js() {
 add_action( 'wp_enqueue_scripts' , 'pwd_theme_js');
 
 
-// delete this function when going live
-add_action( 'wp', 'pwd_redirect' );
-function pwd_redirect() {
-  if ( !is_user_logged_in() && !is_page_template('page-comingsoon.php') && !is_page('wp_admin')) {
-    wp_redirect( '/coming-soon' );
-    exit;
-  }
-}
 ?>
