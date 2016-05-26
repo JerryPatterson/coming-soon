@@ -3,19 +3,13 @@ jQuery(document).ready(function(){
       name:"sidr-right",
       side:"right"
   });
-	 //accordians
-	if ( jQuery( ".pwd-drop-list" ).length ) {
-		jQuery('.pwd-drop-list').hide();
-		jQuery('.pwd-list-div').on('click',function(e){
-			e.preventDefault();
-			jQuery('.list-div').siblings(".pwd-drop-list").slideUp();
-			if (jQuery(this).siblings(".pwd-drop-list").is(':hidden')) {
-				jQuery(this).siblings(".pwd-drop-list").slideToggle();
-			}
-			if (!jQuery(this).children().children(".list-caret").hasClass('fa-caret-up')) {
-				jQuery('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
-			}
-			jQuery(this).children().children(".list-caret").toggleClass("fa-caret-up fa-caret-down");
-		});
-	}
+//accordians
+	jQuery('.pwd-drop-list').hide();
+	jQuery('.pwd-list-div').on('click',function(e){
+		e.preventDefault();
+		jQuery('.list-div').siblings(".pwd-drop-list").slideUp();
+		//if (jQuery(this).siblings(".pwd-drop-list").is(':hidden')) {
+			jQuery(this).siblings(".pwd-drop-list").slideToggle();
+		//}
+	});
 });
