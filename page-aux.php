@@ -6,10 +6,18 @@ Template Name: Aux
 */
 ?>
 
-<?php get_header('commingsoon') ?>
+<?php get_header() ?>
 
-
-<div class="landing-content">
+<section class="page-title">
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns text-center">
+				<?php the_title(); ?>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="page-content">
 	<div class="container">
 		<div class="row">
  			 <div class="eight offset-by-two columns text-center">
@@ -19,11 +27,11 @@ Template Name: Aux
  			  			the_post_thumbnail();
  			  		}
 			  		?>
-      		<?php the_content( 'read more...' ); ?>
+      		<?php the_content(); ?>
         <?php endwhile; endif; ?>
  			</div>
   	</div>
 	</div>
-</div>
+</section>
 
-<?php get_footer('commingsoon') ?>
+<?php get_footer() ?>
