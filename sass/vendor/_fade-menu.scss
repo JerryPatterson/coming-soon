@@ -1,0 +1,90 @@
+//Variables for styles
+
+$menu-background: #000;
+$menu-font-color: #fff;
+$button-color-inactive: #fff;
+$button-color-active: #fff;
+
+
+//fade in menu
+#mobile-menu-btn{
+  position:absolute;
+  height:30px;
+  width:30px;
+  right:0;
+  top:0;
+  z-index:10000000;
+  background:transparent;
+}
+#mobile-menu-btn span, #mobile-menu-btn span:before, #mobile-menu-btn span:after {
+	cursor: pointer;
+	border-radius: 2px;
+	height: 3px;
+	width: 25px;
+	background: $button-color-inactive;
+	position: absolute;
+	display: block;
+	content: '';
+	top:20px;
+}
+#mobile-menu-btn span:before {
+  top: -7px;
+  right:0;
+}
+#mobile-menu-btn span:after {
+  top: 7px;
+  right:0;
+}
+#mobile-menu-btn span, #mobile-menu-btn span:before, #mobile-menu-btn span:after {
+  transition: all 700ms ease-in-out;
+}
+#mobile-menu-btn.active span {
+	transform: rotate(90deg);
+  background-color: transparent;
+  z-index:1000000;
+}
+#mobile-menu-btn.active span:before, #mobile-menu-btn.active span:after {
+  top: 0;
+  height:5px;
+  background:$button-color-active;
+}
+#mobile-menu-btn.active span:before {
+  transform: rotate(225deg);
+}
+#mobile-menu-btn.active span:after {
+  transform: rotate(-225deg);
+}
+#mobile-menu{
+    display:none;
+  position:fixed;
+  top:0;
+  right:0;
+  width:100vw;
+  height:100vh;
+  text-align:center;
+  background: $menu-background;
+  z-index:10000;
+  overflow-y:scroll;
+}
+.mobile-menu-table{
+  display:inline-table;
+  height:100vh;
+
+}
+.mobile-menu-table>div{
+
+  padding:0;
+  display:table-cell;
+  vertical-align: middle;
+  text-align:left;
+  ul{
+  list-style: none;
+}
+  li{
+    margin:10px;
+    a{
+      font-size:25px;
+      color:$menu-font-color;
+    }
+  }
+}
