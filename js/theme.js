@@ -1,8 +1,6 @@
-
-
 jQuery(document).ready(function(){
 
-	//headroom
+	//---Headroom
 	var header=document.querySelector("#header");
 	new Headroom(header,{
 	tolerance:{down:2,up:5},
@@ -13,8 +11,12 @@ jQuery(document).ready(function(){
 		unpinned:"slide--up"}
 	}).init();
 
-	//fademenu
-	//jQuery("#mobile-menu-btn").fademenu('#mobile-menu');
+	//---Fade Menu
+
+	jQuery("#mobile-menu-btn").fademenu('#mobile-menu');
+
+
+	//---Sidr
 
   // jQuery("#right-menu").sidr({
   //     name:"sidr-right",
@@ -22,7 +24,7 @@ jQuery(document).ready(function(){
   // });
 
 
-	//accordians
+	//---Accordians
 	jQuery('.pwd-drop-list').hide();
 	jQuery('.pwd-list-div').on('click',function(e){
 		e.preventDefault();
