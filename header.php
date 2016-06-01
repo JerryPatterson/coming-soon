@@ -14,10 +14,21 @@
 		  <div class="row">
 		  	<div class="twelve columns">
 		    	<a href="<?php bloginfo('url'); ?>" class="u-pull-left"><h2><?php bloginfo( 'name') ?></h2></a>
-		    	<a id="right-menu" class="u-pull-right" href="#right-menu"><i class="fa fa-bars fa-2x"></i></a>
+
+<!-- Sidr Menu --> 
+					<!-- <a id="right-menu" class="u-pull-right" href="#right-menu"><i class="fa fa-bars fa-2x"></i></a>
 		      <div id="sidr-right" class="sidr right">
 		        <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+		      </div> -->
+<!-- End Sidr Menu --> 
+
+<!-- Fade Menu --> 		      
+		   		<a id="mobile-menu-btn" class="u-pull-right" href="#fade-menu"><span></span></a>
+		      <div id="mobile-menu" class="menu-target" style="display:none">
+		        	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		      </div>
+<!-- End Fade Menu --> 
+
 		    </div>
 		  </div>
 		</div>
