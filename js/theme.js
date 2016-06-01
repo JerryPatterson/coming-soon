@@ -14,7 +14,7 @@ jQuery(document).ready(function(){
 	}).init();
 
 	//fademenu
-	jQuery("#mobile-menu-btn").fademenu('#mobile-menu');
+	//jQuery("#mobile-menu-btn").fademenu('#mobile-menu');
 
   // jQuery("#right-menu").sidr({
   //     name:"sidr-right",
