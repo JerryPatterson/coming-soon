@@ -1,3 +1,5 @@
+
+
 jQuery(document).ready(function(){
 
 	//---Headroom
@@ -13,7 +15,7 @@ jQuery(document).ready(function(){
 
 	//---Fade Menu
 
-	jQuery("#mobile-menu-btn").fademenu('#mobile-menu');
+	jQuery("#mobile-menu-btn").fadeMenu('#mobile-menu');
 
 
 	//---Sidr
