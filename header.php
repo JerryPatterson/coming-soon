@@ -32,7 +32,7 @@
 	</div>
 
 <!-- Fade Menu --> 		      
-		      <div id="mobile-menu show-mobile" class="menu-target show-mobile" style="display:none">
+		      <div id="mobile-menu" class="menu-target show-mobile" style="display:none">
 		        	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 		      </div>
 <!-- End Fade Menu --> 
