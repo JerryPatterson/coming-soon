@@ -24,15 +24,19 @@
 
 <!-- Fade Menu --> 		      
 		   		<a id="mobile-menu-btn" class="u-pull-right" href="#fade-menu"><span></span></a>
-		      <div id="mobile-menu" class="menu-target" style="display:none">
-		        	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-		      </div>
 <!-- End Fade Menu --> 
 
 		    </div>
 		  </div>
 		</div>
 	</div>
+
+<!-- Fade Menu --> 		      
+		      <div id="mobile-menu" class="menu-target show-mobile" style="display:none">
+		        	<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+		      </div>
+<!-- End Fade Menu --> 
+
 
 	<!-- Desktop nav hiding header -->
 	<div class="show-desktop">

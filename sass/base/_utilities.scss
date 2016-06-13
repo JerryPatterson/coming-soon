@@ -15,6 +15,7 @@ blockquote {
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
+  border:none;
   border-top: 1px solid $hr-color; }
 
 .lead-in {
@@ -67,6 +68,9 @@ hr.fifty{
 }
 .is-hidden{
   display:none;
+}
+.cursor:hover{
+  cursor:default;
 }
 /* =WordPress Core Add Image Alignment For Posts
 -------------------------------------------------------------- */
