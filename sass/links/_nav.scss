@@ -163,3 +163,42 @@ a:hover {
 }
 
 //end Alex's amazing fantastical PWD Nav
+
+//third level dropdown
+.navbar ul li:hover>ul{
+  height: auto;
+  overflow: visible; 
+  }
+.navbar li ul li ul {
+position: absolute;
+left: calc(100% + 1px);
+top: 0;
+height: 0px;
+max-height:0px;
+-webkit-box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+-moz-box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+
+}
+.fixed-nav li ul li ul{
+  left:calc(100% + 5px);
+
+}
+.navbar li ul li ul li{
+  background:rgba($teal, .5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+-moz-box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+}
+.fixed-nav li ul li ul li{
+  background:#fff;
+}
+.navbar li ul li.menu-item-has-children:hover>a::after {
+  content: ">";
+  position:absolute;
+  right:5px;
+
+}
+.navbar li ul li ul li a, .navbar-page li ul li ul li a{
+  line-height:2rem;
+}
