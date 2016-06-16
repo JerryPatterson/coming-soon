@@ -40,6 +40,10 @@ CONTROLS ______________________
 
 This is a special, custom field used to add titles, discriptions, and horizontal rules that are not attached to any setting. 
 
+Input: N/A
+Output: N/A
+Code:
+
 $wp_customize->add_control(
     new PWD_Customize_Misc_Control(
         $wp_customize,
@@ -95,7 +99,7 @@ $wp_customize->add_control(
 			)
 		)
 	);
-	
+
 ***** Image Control *****
 
 Input: Media Button
