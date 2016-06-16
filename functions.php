@@ -64,4 +64,6 @@ function pwd_theme_js() {
 add_action( 'wp_enqueue_scripts' , 'pwd_theme_js');
 
 
+//enqueues customizer. Uncomment to start using the customizer
+// @include(get_template_directory().'/customizer/customizer-functions.php')
 ?>
