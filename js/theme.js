@@ -26,13 +26,36 @@ jQuery(document).ready(function(){
   // });
 
 
-	//---Accordians
-	jQuery('.pwd-drop-list').hide();
-	jQuery('.pwd-list-div').on('click',function(e){
-		e.preventDefault();
-		jQuery('.list-div').siblings(".pwd-drop-list").slideUp();
-		//if (jQuery(this).siblings(".pwd-drop-list").is(':hidden')) {
-			jQuery(this).siblings(".pwd-drop-list").slideToggle();
-		//}
-	});
+//Accordians
+
+    jQuery('._accordian-content').hide();
+    jQuery('._accordian-title').on('click', toggleAccordian);
+    
+//Accordian Functionality
+
+function toggleAccordian(){
+    var clicked = jQuery(this);
+    clicked.siblings('._accordian-content').slideToggle();
+    clicked.children('._caret').toggleClass('is-rotated');
+}
+
+
+// Back to top
+
+jQuery(document).ready(function() {
+    var offset = 500;
+    var duration = 300;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    });
 });
