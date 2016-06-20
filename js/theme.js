@@ -14,12 +14,6 @@ classes:{
 //---Fade Menu
 jQuery("#mobile-menu-btn").fadeMenu('#mobile-menu');
 
-// Sidr
-jQuery("#right-menu").sidr({
-  name:"sidr-right",
-  side:"right"
-}); 
-
 //  Back to top
 var offset = 500;
 var duration = 300;
