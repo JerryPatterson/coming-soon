@@ -42,7 +42,8 @@ jQuery('._accordian-title').on('click', toggleAccordian);
 // Functions
 
 //Accordian Functions
-function toggleAccordian(){
+function toggleAccordian(e){
+  e.preventDefault();
   var clicked = jQuery(this);
   clicked.siblings('._accordian-content').slideToggle();
   clicked.children('._caret').toggleClass('is-rotated');
