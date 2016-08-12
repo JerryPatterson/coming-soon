@@ -1,7 +1,11 @@
 // utilities-------------------
 
 /* This section has classes based on small appearance changes */
-
+// Logged in
+ .admin-bar .navbar {
+  top: 28px;
+  z-index: 1000;
+}
 img {
   position: relative;
 	max-width: 100%;
